@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.lancamento-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para a tabela de produtos lançados */
+.lancamento-tabela {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+/* Aqui você pode fazer alterações estéticas nos produtos lançados */
+.lancamento-tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lancamento-tabela th, .lancamento-tabela td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.lancamento-tabela th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+/* Estilo para produtos com quantidade zero */
+.lancamento-tabela .zero-quantidade {
+    background-color: #fcff60; /* Cor vermelho claro */
+}
+
+/* Estilo para produtos com quantidade atualizada */
+.lancamento-tabela .atualizado {
+    background-color: #f5f52e; /* Cor amarelo claro */
+}
+
+/* Fim das alterações estéticas nos produtos lançados */
+
+/* Estilo específico para os botões */
+button.editar {
+    width: 150px; /* Ajuste o valor conforme necessário */
+}
+
+button.comprar {
+    width: 150px; /* Ajuste o valor conforme necessário */
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
